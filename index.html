@@ -1,0 +1,41 @@
+<!-- Grouping Tool (Non-WebGL Version) by budou10 -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>カード帳ツール | HTML5 Tools</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://html5tools.netlify.app/html5tools-title.css">
+        <link rel="stylesheet" href="https://html5tools.netlify.app/html5tools-footer.css">
+        <script src="script.js" defer></script>
+        <link rel="icon" type="image/png" href="icon.png" id="icon">
+    </head>
+    <body>
+        <p class="center" id="catchcopy">だれでも、いつでも、Webで使えるツール集</p>
+        <p id="title">HTML5 Tools</p>
+        <p id="tooltitle" class="center">カード帳ツール</p>
+        <!-- <button id="darkModeButton"></button> -->
+        <p class="center">内容を自由にカスタマイズ可能なカード帳をつくれるツール。</p>
+        <div id="card">
+            <p id="card-text">---</p>
+            <p id="card-prev">---</p>
+            <p id="card-num">--- / ---</p>
+            <p id="card-info">枠内をクリックして次のカードを開きます...</p>
+        </div>
+        <h2 id="settings">設定</h2>
+        <textarea placeholder="カードの表の文字列（一行につき一枚）" id="card_omote_input"></textarea>
+        <textarea placeholder="カードの裏の文字列（一行につき一枚）" id="card_ura_input"></textarea>
+        <div id="checkboxes">
+            <input type="checkbox" id="hideInfo">
+            <label for="hideInfo">操作方法（「枠内をクリックして次のカードを開きます...」）を表示しない</label>
+        </div>
+        <div id="buttons">
+            <input type="button" id="genCard" value="シャッフルしカード帳を作る">
+            <input type="button" id="saveSettings" value="入力を保存">
+            <input type="button" id="scrollToCard" value="カードまでスクロール">
+        </div>
+        <footer>
+            <p>Copyright &copy; HTML5 Tools 2025 | ライセンス: Apache License 2.0 | <a href="https://x.gd/H5T_card_src" download>ソースコードをダウンロード</a></p>
+        </footer>
+    </body>
+</html>
