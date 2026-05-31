@@ -204,11 +204,15 @@ function filterChecked() {
     card_omote_input.value = newOmoteCardArr.join("\n");
     card_ura_input.value = newUraCardArr.join("\n");
 }
-check_button.addEventListener("click", checkClicked);
-card_elem.addEventListener("click", () => {
-    if (!document.querySelector("#check_button:hover")) {
+check_button.addEventListener("click", (event) => {
+    checkClicked();
+    event.stopPropagation();
+    event.preventDefault();
+});
+card_elem.addEventListener("click", (event) => {
+    if (!(event && event.target.closest("#check_button"))) {
         cardClicked();
-    }
+    }    
 });
 filter_checked_button.addEventListener("click", filterChecked);
 // タイトルクリック処理

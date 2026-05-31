@@ -97,14 +97,30 @@ textarea {
     left: 10px;
     bottom: 10px;
     cursor: pointer;
-    background: none;
-    border: none;
+    user-select: none;
+    -webkit-user-select: none; /* iOS向け */
+    -webkit-tap-highlight-color: transparent; /* タップ時の青いハイライトを消す */
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+    width: 130px;
+    max-width: 25vw;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 #check_button[color="green"] {
-    color: #26f526;
+    background-color: #26f526;
+    border-color: #26f526;
+    color: #ffffff;
 }
 #check_button[color="gray"] {
-    color: #333333;
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
 }
 
 [hidden] {
