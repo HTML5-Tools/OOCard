@@ -198,6 +198,9 @@ function checkClicked() {
     }
 }
 function filterChecked() {
+    if (!window.confirm("✓がついたカードを除外しますか？")){
+        return;
+    }
     if (newOmoteCardArr.length === 0){
         window.alert("カードがすべて除外されました！");
     }

@@ -29,20 +29,22 @@
     margin-top: 16px;
 }
 #card {
-    --height: calc(100vh - 8px);
-    height: var(--height);
-    width: 100%;
+    min-height: 97vh;
+    max-height: 97vh;
+    min-width: 98vw;
+    max-width: 98vw;
     border: 2px solid #666666;
     cursor: pointer;
     font-size: 100px;
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
     user-select: none;
-    
     /* Flexboxの設定 */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
 } 
 #card[state="omote"] {
     background-color: #f8f8f8;
@@ -111,6 +113,7 @@ textarea {
     text-align: center;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 #check_button[color="green"] {
     background-color: #26f526;
