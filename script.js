@@ -206,6 +206,7 @@ function filterChecked() {
     }
     card_omote_input.value = newOmoteCardArr.join("\n");
     card_ura_input.value = newUraCardArr.join("\n");
+    saveData(false);
 }
 check_button.addEventListener("click", (event) => {
     checkClicked();

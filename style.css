@@ -28,6 +28,9 @@
     color: #333;
     margin-top: 16px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
 #card {
     min-height: 97vh;
     max-height: 97vh;
@@ -45,6 +48,7 @@
     position: relative;
     flex-shrink: 0;
     flex-grow: 0;
+    font-family: 'Klee One';
 } 
 #card[state="omote"] {
     background-color: #f8f8f8;
