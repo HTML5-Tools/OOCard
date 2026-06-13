@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
 /* HTML5 Toolsのロゴなどのスタイル*/
 .distance {
     margin: 5px;
@@ -28,10 +29,8 @@
     color: #333;
     margin-top: 16px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
-
 #card {
+    font-family: 'Klee One', "Noto Sans JP", sans-serif;
     min-height: 97vh;
     max-height: 97vh;
     min-width: 98vw;
@@ -48,7 +47,6 @@
     position: relative;
     flex-shrink: 0;
     flex-grow: 0;
-    font-family: 'Klee One';
 } 
 #card[state="omote"] {
     background-color: #f8f8f8;
@@ -95,8 +93,20 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
 }
-
-#check_button {
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.delete-button {
+    color: red;
+    font-size: 20px;
+}
+#add-profile {
+    color: #ffffff;
+    background-color: #26f526;
+}
+#check-button {
     display: flex;
     position: absolute;
     font-size: 100px;
@@ -119,12 +129,12 @@ textarea {
     align-items: center;
     box-sizing: border-box;
 }
-#check_button[color="green"] {
+#check-button[color="green"] {
     background-color: #26f526;
     border-color: #26f526;
     color: #ffffff;
 }
-#check_button[color="gray"] {
+#check-button[color="gray"] {
     background-color: #333333;
     border-color: #333333;
     color: #ffffff;
