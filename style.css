@@ -29,6 +29,9 @@
     color: #333;
     margin-top: 16px;
 }
+body#mobile {
+    zoom: 1.8;
+}
 #card {
     font-family: 'Klee One', "Noto Sans JP", sans-serif;
     min-height: 97vh;
@@ -48,6 +51,9 @@
     flex-shrink: 0;
     flex-grow: 0;
 } 
+#card#mobile{
+    zoom: calc(1 / 1.8);
+}
 #card[state="omote"] {
     background-color: #f8f8f8;
     color: #333333;

@@ -32,6 +32,12 @@ let newUraCardArr = [];
 
 let profiles = new Set();
 
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+    document.body.setAttribute("id", "mobile");
+    cardElem.setAttribute("id", "mobile");
+}
+
 function loadData() {
     const noData = localStorage.getItem("noData");
     if (noData === null){
