@@ -34,8 +34,8 @@ let profiles = new Set();
 
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (isMobile) {
-    document.body.setAttribute("id", "mobile");
-    cardElem.setAttribute("id", "mobile");
+    document.body.setAttribute("mode", "mobile");
+    cardElem.setAttribute("mode", "mobile");
 }
 
 function loadData() {
