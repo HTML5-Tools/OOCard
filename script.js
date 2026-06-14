@@ -324,6 +324,11 @@ function updateProfilesUI() {
 function addProfile() {
     const profileName = prompt("プロファイル名を入力してください:");
     if (profileName) {
+        if (profiles.has(profileName)) {
+            if (!window.confirm(`"${profileName}"は既に存在します。上書きしますか？`)) {
+                return;
+            }
+        }
         profiles.add(profileName);
         localStorage.setItem("profile_" + profileName, JSON.stringify({
             omote: cardOmoteInput.value,
@@ -338,7 +343,7 @@ function addProfile() {
 addProfileButton.addEventListener("click", addProfile);
 // タイトルクリック処理
 const titleElem = document.querySelector("#title");
-titleElem.addEventListener("click", () =>{
+titleElem.addEventListener("click", () => {
     location.href = "https://html5tools.netlify.app";
 });
 

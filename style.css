@@ -85,7 +85,10 @@
     text-align: center;
     margin: 10px;
 }
-
+#buttons {
+    display: flex;
+    gap: 10px;
+}
 textarea {
     height: 150px;
     width: 220px; /* 横幅を固定 */
@@ -93,14 +96,25 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
 }
+#profile-contaner {
+    display: flex;
+}
+#profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 button {
+    display: flex;  
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    align-items: center;
 }
 .delete-button {
     color: red;
-    font-size: 20px;
+    font-size: 30px;
+    margin-left: 10px;
 }
 #add-profile {
     color: #ffffff;
