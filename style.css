@@ -65,12 +65,18 @@ body[mode="mobile"] {
 #card-text {
     text-align: center;
 }
+#card-text[mode="mobile"] {
+    zoom: 1.8;
+}
 #card-num {
     position: absolute;
     bottom: 0;
     right: 25px;
     font-size: 40px;
     transition: color 0.5s ease-in-out;
+}
+#card-num[mode="mobile"] {
+    zoom: 1.8;
 }
 #card-num[textcolor="red"] {
     color: rgb(245, 38, 38);
@@ -80,12 +86,18 @@ body[mode="mobile"] {
     top: 0;
     font-size: 50px;
 }
+#card-prev[mode="mobile"] {
+    zoom: 1.8;
+}
 #card-info {
     position: absolute;
     top: 0;
     left: 10px;
     font-size: 20px;
     color: #dbdbdb;
+}
+#card-info[mode="mobile"] {
+    zoom: 1.8;
 }
 #STCdiv{
     text-align: center;
@@ -148,6 +160,9 @@ button {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+}
+#check-button[mode="mobile"] {
+    zoom: 1.8;
 }
 #check-button[color="green"] {
     background-color: #26f526;

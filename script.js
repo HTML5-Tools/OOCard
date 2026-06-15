@@ -36,6 +36,11 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (isMobile) {
     document.body.setAttribute("mode", "mobile");
     cardElem.setAttribute("mode", "mobile");
+    cardText.setAttribute("mode", "mobile");
+    cardPrev.setAttribute("mode", "mobile");
+    cardNum.setAttribute("mode", "mobile");
+    cardInfoElem.setAttribute("mode", "mobile");
+    checkButton.setAttribute("mode", "mobile");
 }
 
 function loadData() {
